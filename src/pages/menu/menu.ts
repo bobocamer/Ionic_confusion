@@ -22,7 +22,7 @@ export class MenuPage implements OnInit {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
        private dishservice: DishProvider,
-        @Inject('BaseURL') private BaseURL) {
+        @Inject('BaseURL') public BaseURL) {
   }
 
   ngOnInit() {

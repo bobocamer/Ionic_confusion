@@ -22,7 +22,7 @@ export class DishdetailPage {
   numcomments: number;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-      @Inject('BaseURL') private BaseURL) {
+      @Inject('BaseURL') public BaseURL) {
         this.dish = navParams.get('dish');
         this.numcomments = this.dish.comments.length;
         let total = 0;
