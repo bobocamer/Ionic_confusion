@@ -20,6 +20,7 @@ import { ProcessHttpmsgProvider } from '../providers/process-httpmsg/process-htt
 import { HttpModule } from '@angular/http';
 import { baseURL } from '../shared/baseurl';
 import { FavoriteProvider } from '../providers/favorite/favorite';
+import { CommentPage } from '../pages/comment/comment';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     ContactPage,
     DishdetailPage,
     FavoritesPage,
-    ReservationPage
+    ReservationPage,
+    CommentPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ import { FavoriteProvider } from '../providers/favorite/favorite';
     ContactPage,
     DishdetailPage,
     FavoritesPage,
-    ReservationPage
+    ReservationPage,
+    CommentPage
   ],
   providers: [
     StatusBar,
