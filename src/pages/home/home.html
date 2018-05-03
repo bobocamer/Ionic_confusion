@@ -9,7 +9,7 @@
 
 <ion-content>
 
-
+  
         <ion-card *ngIf="dish">
           <img src="{{BaseURL + dish.image}}"/>
           <ion-card-content>
@@ -29,7 +29,9 @@
           <h2>Error</h2>
           <h4>{{dishErrMess}}</h4>
         </div>
+      
 
+      
         <ion-card *ngIf="promotion">
           <img src="{{BaseURL + promotion.image}}"/>
           <ion-card-content>
@@ -49,7 +51,9 @@
           <h2>Error</h2>
           <h4>{{promoErrMess}}</h4>
         </div>
+      
 
+  
         <ion-card *ngIf="leader">
           <img src="{{BaseURL + leader.image}}"/>
           <ion-card-content>
@@ -72,7 +76,9 @@
           <h2>Error</h2>
           <h4>{{leaderErrMess}}</h4>
         </div>
-
+      
+    
+  
   <ion-fab right bottom>
     <button ion-fab color="accent"> <ion-icon name="arrow-dropup"> </ion-icon> </button>
    <ion-fab-list side="top">

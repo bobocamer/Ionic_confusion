@@ -21,6 +21,8 @@ import { HttpModule } from '@angular/http';
 import { baseURL } from '../shared/baseurl';
 import { FavoriteProvider } from '../providers/favorite/favorite';
 import { CommentPage } from '../pages/comment/comment';
+import { LoginPage } from '../pages/login/login';
+import { IonicStorageModule } from '@ionic/storage';
 
 
 @NgModule({
@@ -33,12 +35,14 @@ import { CommentPage } from '../pages/comment/comment';
     DishdetailPage,
     FavoritesPage,
     ReservationPage,
-    CommentPage
+    CommentPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    IonicStorageModule.forRoot()
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -50,7 +54,8 @@ import { CommentPage } from '../pages/comment/comment';
     DishdetailPage,
     FavoritesPage,
     ReservationPage,
-    CommentPage
+    CommentPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
